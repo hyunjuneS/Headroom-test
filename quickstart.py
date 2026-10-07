@@ -12,6 +12,10 @@ logging.basicConfig(level=logging.WARNING)  # show headroom warnings (e.g. why n
 model = os.getenv("OPENAI_MODEL")
 base_url = os.getenv("OPENAI_BASE_URL")
 api_key = os.getenv("OPENAI_API_KEY")
+# "disabled" skips headroom's ML text model (downloaded from HuggingFace). Logs/JSON/code
+# compress without it, and a slow or failing download can push compress() past its 20s
+# deadline, which sends the original messages uncompressed.
+kompress_model = os.getenv("HEADROOM_KOMPRESS_MODEL") or None
 
 missing = [k for k, v in {"OPENAI_MODEL": model, "OPENAI_BASE_URL": base_url,
                           "OPENAI_API_KEY": api_key}.items() if not v]
@@ -37,7 +41,7 @@ messages = [
     {"role": "tool", "tool_call_id": "call_0", "content": log},
     {"role": "user", "content": "What went wrong?"},
 ]
-result = compress(messages, model=model, diagnostics=True)
+result = compress(messages, model=model, kompress_model=kompress_model, diagnostics=True)
 
 client = OpenAI(api_key=api_key, base_url=base_url)
 response = client.chat.completions.create(model=model, messages=result.messages)
