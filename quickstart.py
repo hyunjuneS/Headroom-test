@@ -37,11 +37,14 @@ messages = [
     {"role": "tool", "tool_call_id": "call_0", "content": log},
     {"role": "user", "content": "What went wrong?"},
 ]
-result = compress(messages, model=model)
+result = compress(messages, model=model, diagnostics=True)
 
 client = OpenAI(api_key=api_key, base_url=base_url)
 response = client.chat.completions.create(model=model, messages=result.messages)
 print(response.choices[0].message.content)
 print(f"Transforms: {result.transforms_applied}")
+# Per-message decision, e.g. why a message was not compressed
+for d in result.diagnostics or []:
+    print(f"  [{d.message_index}] {d.role:9} {d.tokens_before:>5} -> {d.tokens_after:<5} {d.action}")
 print(f"Tokens: {result.tokens_before} -> {result.tokens_after}")
 print(f"Saved {result.tokens_saved} tokens ({result.compression_ratio:.0%})")
