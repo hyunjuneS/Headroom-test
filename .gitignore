@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .venv/
 .env
+
+# per-user Claude Code settings (headroom wrap writes ANTHROPIC_BASE_URL here)
+.claude/settings.local.json

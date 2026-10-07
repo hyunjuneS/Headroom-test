@@ -59,3 +59,33 @@ python claude_code/emit.py yaml 을 실행하고, replicas가 0인 서비스를 
 | **Recent Requests** | 요청별 입력 토큰과 절약 비율. 행을 누르면 자세히 |
 
 맨 위 `Session / Lifetime / Historical` 탭으로 이번 실행분, 누적, 기간별을 바꿔 볼 수 있습니다.
+
+## 문제 해결
+
+### `Claude Code has both ANTHROPIC_API_KEY ... and ANTHROPIC_AUTH_TOKEN ... set`
+`~/.claude/settings.json`(Windows: `C:\Users\<이름>\.claude\settings.json`)의 `env`에 인증 키가 둘 다 있어서
+headroom이 실행 전에 멈춘 것입니다. **둘 중 하나만** 남겨야 합니다.
+
+| 남길 키 | 이런 경우 |
+|---|---|
+| `ANTHROPIC_AUTH_TOKEN` | 회사 게이트웨이를 씀 (`env`에 `ANTHROPIC_BASE_URL`이 회사 주소로 있음) |
+| `ANTHROPIC_API_KEY` | Anthropic API 키(`sk-ant-...`)로 직접 결제 |
+
+어느 쪽인지 모르면 사내 Claude Code 설치 안내나 담당자에게 확인하세요.
+
+**방법 A — 이 프로젝트에서만 끄기 (권장, 전역 설정은 그대로)**
+이 저장소 폴더에 `.claude/settings.local.json`을 만들고, 안 쓸 키를 빈 값으로 덮어씁니다.
+```json
+{
+  "env": {
+    "ANTHROPIC_API_KEY": ""
+  }
+}
+```
+(`ANTHROPIC_AUTH_TOKEN`을 끌 거면 그 이름으로 바꿉니다.) 이 파일은 `.gitignore`에 들어 있어 커밋되지 않습니다.
+
+**방법 B — 전역 설정에서 지우기**
+`settings.json`을 백업한 뒤 `env`에서 안 쓰는 키 한 줄을 지웁니다. 모든 프로젝트의 Claude Code에 적용됩니다.
+
+회사 게이트웨이(`ANTHROPIC_BASE_URL`)를 쓰고 있어도 괜찮습니다. `headroom wrap`은 기존 주소를 그대로 upstream으로 삼아
+`Claude Code → headroom → 회사 게이트웨이` 순서로 연결합니다. 실행 시 `ANTHROPIC_BASE_URL=... → upstream <회사 주소>` 줄로 확인할 수 있습니다.
