@@ -1,3 +1,4 @@
+import logging
 import os
 import sys
 
@@ -6,6 +7,7 @@ from headroom import compress
 from openai import OpenAI
 
 load_dotenv()  # reads .env in the current directory
+logging.basicConfig(level=logging.WARNING)  # show headroom warnings (e.g. why nothing was compressed)
 
 model = os.getenv("OPENAI_MODEL")
 base_url = os.getenv("OPENAI_BASE_URL")
@@ -40,5 +42,6 @@ result = compress(messages, model=model)
 client = OpenAI(api_key=api_key, base_url=base_url)
 response = client.chat.completions.create(model=model, messages=result.messages)
 print(response.choices[0].message.content)
+print(f"Transforms: {result.transforms_applied}")
 print(f"Tokens: {result.tokens_before} -> {result.tokens_after}")
 print(f"Saved {result.tokens_saved} tokens ({result.compression_ratio:.0%})")
