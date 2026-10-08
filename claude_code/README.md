@@ -109,22 +109,26 @@ headroom wrap claude --code-memory none
 `Claude Code → headroom → 회사 게이트웨이` 순서로 연결된 것입니다.
 이전에 띄운 headroom 프록시가 남아 있으면 그걸 재사용해 예전 주소로 보낼 수 있으니, 안 되면 PC를 재시작하거나 남은 `headroom` 프로세스를 종료하고 다시 실행하세요.
 
-## 로그 압축 테스트 (`logs.py`)
-Claude Code에 `python claude_code/logs.py <case> 를 실행하고 <질문>` 형태로 시키고, 답이 맞는지와 대시보드 절약량을 봅니다.
-`python claude_code/logs.py list`로 질문과 정답을 볼 수 있습니다.
+## 로그 압축 테스트 (`logs/*.txt`)
+저장소의 `logs/` 폴더에 정답이 하나씩 숨어 있는 로그 파일 8개가 있습니다.
+Claude Code에 **`cat`으로 읽으라고** 시키세요 (예: `cat logs/worker.txt 해서 뭐가 문제인지 알려줘`).
 
-라이브러리로 미리 돌려 본 결과 (AI 모델 끔, Claude Code `Bash` 출력 기준):
+> headroom은 Claude Code의 `Read` 도구 결과는 일부러 압축하지 않습니다 (Claude가 파일을 정확히 고쳐야 할 수 있어서).
+> 그냥 "읽어줘"라고 하면 Claude가 `Read`를 쓰므로 절약이 0입니다. `cat`(명령 실행)으로 읽은 로그만 압축됩니다.
 
-| case | 내용 | 토큰 | 압축 후 정답이 보이나 |
+| 파일 | 질문 | 정답 | 압축 (`cat` 기준 예상) |
 |---|---|---|---|
-| `huge` | 5000줄 + FATAL 1줄 | 79,692 → 154 | 보임 |
-| `multi` | 1000줄 + 서로 다른 ERROR 3개 | 18,113 → 430 | 3개 다 보임 |
-| `trace` | 200줄 + Java 스택트레이스 | 4,269 → 229 | 예외·위치 보임 |
-| `build` | 빌드 로그 + 마지막 ERROR | 6,081 → 808 | 보임 |
-| `count` | 같은 WARN 57번 | 거의 안 줄어듦 | 다 보임 (`repeated N times`로 묶인 부분 있음) |
-| `pytest` | PASSED 400 + FAILED 2 | 안 줄어듦 | 보임 |
-| `trend` | 에러 없이 지연시간만 20→900ms 증가 | 8,078 → 29 | **안 보임** (INFO 전부 생략, 원본 조회 표시만 남음) |
-| `ok` | 정상 로그만 700줄 | 10,200 → 29 | 문제 없음 (내용 전부 생략) |
+| `worker.txt` | 뭐가 문제야? | job 4321 out of memory | 79,727 → 189 |
+| `api.txt` | 에러를 전부 찾아줘 | 3개: 카드 거절(ORD-8812) / 디스크 97% / JWT 검증 실패 | 18,147 → 464 |
+| `shipping.txt` | 무슨 예외가 어디서 났어? | NullPointerException, LabelPrinter.java:57 | 4,304 → 264 |
+| `build.txt` | 빌드가 왜 실패했어? | PaymentGateway.java:142, chargeCard 없음 | 6,116 → 842 |
+| `cache.txt` | redis timeout 경고가 몇 번 났어? | 57번 | 거의 안 줄어듦 |
+| `pytest.txt` | 어떤 테스트가 실패했어? | test_refund_rounding, test_token_expiry | 안 줄어듦 |
+| `search.txt` | 이상한 점 있어? | 에러는 없고 응답시간이 20ms → 900ms로 증가 | 8,114 → 64 (**정답 줄이 전부 생략됨**) |
+| `health.txt` | 문제 있어? | 문제 없음 | 거의 전부 생략 |
 
-`trend`처럼 INFO 줄에만 신호가 있으면 headroom이 전부 생략합니다. 이때 Claude가 `headroom_retrieve` 도구로 원본을 다시 가져오는지 보는 것이 이 테스트의 핵심입니다
-(`--no-mcp`로 실행하면 이 도구가 없어 원본을 못 가져옵니다).
+`search.txt`는 INFO 줄 안에만 신호가 있어 headroom이 전부 생략합니다. Claude가 `headroom_retrieve`로 원본을 다시 가져와 맞히는지가 핵심입니다.
+
+### 덤: `Read` vs `cat` 비교
+같은 파일을 `logs/worker.txt를 Read로 읽고 뭐가 문제인지 알려줘` / `cat logs/worker.txt 해서 뭐가 문제인지 알려줘`로 각각 시켜 보고 대시보드의 Recent Requests를 비교하면 차이가 보입니다.
+`worker.txt`는 5,000줄이라 `Read`는 앞부분만 읽을 수 있어서, 4,322번째 줄의 정답을 못 볼 수도 있습니다.

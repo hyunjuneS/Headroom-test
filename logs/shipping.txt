@@ -1,0 +1,260 @@
+2026-10-08 10:00:00 INFO  [worker-0] Processed batch 0
+2026-10-08 10:00:01 INFO  [worker-1] Processed batch 1
+2026-10-08 10:00:02 INFO  [worker-2] Processed batch 2
+2026-10-08 10:00:03 INFO  [worker-3] Processed batch 3
+2026-10-08 10:00:04 INFO  [worker-4] Processed batch 4
+2026-10-08 10:00:05 INFO  [worker-5] Processed batch 5
+2026-10-08 10:00:06 INFO  [worker-6] Processed batch 6
+2026-10-08 10:00:07 INFO  [worker-7] Processed batch 7
+2026-10-08 10:00:08 INFO  [worker-0] Processed batch 8
+2026-10-08 10:00:09 INFO  [worker-1] Processed batch 9
+2026-10-08 10:00:10 INFO  [worker-2] Processed batch 10
+2026-10-08 10:00:11 INFO  [worker-3] Processed batch 11
+2026-10-08 10:00:12 INFO  [worker-4] Processed batch 12
+2026-10-08 10:00:13 INFO  [worker-5] Processed batch 13
+2026-10-08 10:00:14 INFO  [worker-6] Processed batch 14
+2026-10-08 10:00:15 INFO  [worker-7] Processed batch 15
+2026-10-08 10:00:16 INFO  [worker-0] Processed batch 16
+2026-10-08 10:00:17 INFO  [worker-1] Processed batch 17
+2026-10-08 10:00:18 INFO  [worker-2] Processed batch 18
+2026-10-08 10:00:19 INFO  [worker-3] Processed batch 19
+2026-10-08 10:00:20 INFO  [worker-4] Processed batch 20
+2026-10-08 10:00:21 INFO  [worker-5] Processed batch 21
+2026-10-08 10:00:22 INFO  [worker-6] Processed batch 22
+2026-10-08 10:00:23 INFO  [worker-7] Processed batch 23
+2026-10-08 10:00:24 INFO  [worker-0] Processed batch 24
+2026-10-08 10:00:25 INFO  [worker-1] Processed batch 25
+2026-10-08 10:00:26 INFO  [worker-2] Processed batch 26
+2026-10-08 10:00:27 INFO  [worker-3] Processed batch 27
+2026-10-08 10:00:28 INFO  [worker-4] Processed batch 28
+2026-10-08 10:00:29 INFO  [worker-5] Processed batch 29
+2026-10-08 10:00:30 INFO  [worker-6] Processed batch 30
+2026-10-08 10:00:31 INFO  [worker-7] Processed batch 31
+2026-10-08 10:00:32 INFO  [worker-0] Processed batch 32
+2026-10-08 10:00:33 INFO  [worker-1] Processed batch 33
+2026-10-08 10:00:34 INFO  [worker-2] Processed batch 34
+2026-10-08 10:00:35 INFO  [worker-3] Processed batch 35
+2026-10-08 10:00:36 INFO  [worker-4] Processed batch 36
+2026-10-08 10:00:37 INFO  [worker-5] Processed batch 37
+2026-10-08 10:00:38 INFO  [worker-6] Processed batch 38
+2026-10-08 10:00:39 INFO  [worker-7] Processed batch 39
+2026-10-08 10:00:40 INFO  [worker-0] Processed batch 40
+2026-10-08 10:00:41 INFO  [worker-1] Processed batch 41
+2026-10-08 10:00:42 INFO  [worker-2] Processed batch 42
+2026-10-08 10:00:43 INFO  [worker-3] Processed batch 43
+2026-10-08 10:00:44 INFO  [worker-4] Processed batch 44
+2026-10-08 10:00:45 INFO  [worker-5] Processed batch 45
+2026-10-08 10:00:46 INFO  [worker-6] Processed batch 46
+2026-10-08 10:00:47 INFO  [worker-7] Processed batch 47
+2026-10-08 10:00:48 INFO  [worker-0] Processed batch 48
+2026-10-08 10:00:49 INFO  [worker-1] Processed batch 49
+2026-10-08 10:00:50 INFO  [worker-2] Processed batch 50
+2026-10-08 10:00:51 INFO  [worker-3] Processed batch 51
+2026-10-08 10:00:52 INFO  [worker-4] Processed batch 52
+2026-10-08 10:00:53 INFO  [worker-5] Processed batch 53
+2026-10-08 10:00:54 INFO  [worker-6] Processed batch 54
+2026-10-08 10:00:55 INFO  [worker-7] Processed batch 55
+2026-10-08 10:00:56 INFO  [worker-0] Processed batch 56
+2026-10-08 10:00:57 INFO  [worker-1] Processed batch 57
+2026-10-08 10:00:58 INFO  [worker-2] Processed batch 58
+2026-10-08 10:00:59 INFO  [worker-3] Processed batch 59
+2026-10-08 10:00:00 INFO  [worker-4] Processed batch 60
+2026-10-08 10:00:01 INFO  [worker-5] Processed batch 61
+2026-10-08 10:00:02 INFO  [worker-6] Processed batch 62
+2026-10-08 10:00:03 INFO  [worker-7] Processed batch 63
+2026-10-08 10:00:04 INFO  [worker-0] Processed batch 64
+2026-10-08 10:00:05 INFO  [worker-1] Processed batch 65
+2026-10-08 10:00:06 INFO  [worker-2] Processed batch 66
+2026-10-08 10:00:07 INFO  [worker-3] Processed batch 67
+2026-10-08 10:00:08 INFO  [worker-4] Processed batch 68
+2026-10-08 10:00:09 INFO  [worker-5] Processed batch 69
+2026-10-08 10:00:10 INFO  [worker-6] Processed batch 70
+2026-10-08 10:00:11 INFO  [worker-7] Processed batch 71
+2026-10-08 10:00:12 INFO  [worker-0] Processed batch 72
+2026-10-08 10:00:13 INFO  [worker-1] Processed batch 73
+2026-10-08 10:00:14 INFO  [worker-2] Processed batch 74
+2026-10-08 10:00:15 INFO  [worker-3] Processed batch 75
+2026-10-08 10:00:16 INFO  [worker-4] Processed batch 76
+2026-10-08 10:00:17 INFO  [worker-5] Processed batch 77
+2026-10-08 10:00:18 INFO  [worker-6] Processed batch 78
+2026-10-08 10:00:19 INFO  [worker-7] Processed batch 79
+2026-10-08 10:00:20 INFO  [worker-0] Processed batch 80
+2026-10-08 10:00:21 INFO  [worker-1] Processed batch 81
+2026-10-08 10:00:22 INFO  [worker-2] Processed batch 82
+2026-10-08 10:00:23 INFO  [worker-3] Processed batch 83
+2026-10-08 10:00:24 INFO  [worker-4] Processed batch 84
+2026-10-08 10:00:25 INFO  [worker-5] Processed batch 85
+2026-10-08 10:00:26 INFO  [worker-6] Processed batch 86
+2026-10-08 10:00:27 INFO  [worker-7] Processed batch 87
+2026-10-08 10:00:28 INFO  [worker-0] Processed batch 88
+2026-10-08 10:00:29 INFO  [worker-1] Processed batch 89
+2026-10-08 10:00:30 INFO  [worker-2] Processed batch 90
+2026-10-08 10:00:31 INFO  [worker-3] Processed batch 91
+2026-10-08 10:00:32 INFO  [worker-4] Processed batch 92
+2026-10-08 10:00:33 INFO  [worker-5] Processed batch 93
+2026-10-08 10:00:34 INFO  [worker-6] Processed batch 94
+2026-10-08 10:00:35 INFO  [worker-7] Processed batch 95
+2026-10-08 10:00:36 INFO  [worker-0] Processed batch 96
+2026-10-08 10:00:37 INFO  [worker-1] Processed batch 97
+2026-10-08 10:00:38 INFO  [worker-2] Processed batch 98
+2026-10-08 10:00:39 INFO  [worker-3] Processed batch 99
+2026-10-08 10:00:40 INFO  [worker-4] Processed batch 100
+2026-10-08 10:00:41 INFO  [worker-5] Processed batch 101
+2026-10-08 10:00:42 INFO  [worker-6] Processed batch 102
+2026-10-08 10:00:43 INFO  [worker-7] Processed batch 103
+2026-10-08 10:00:44 INFO  [worker-0] Processed batch 104
+2026-10-08 10:00:45 INFO  [worker-1] Processed batch 105
+2026-10-08 10:00:46 INFO  [worker-2] Processed batch 106
+2026-10-08 10:00:47 INFO  [worker-3] Processed batch 107
+2026-10-08 10:00:48 INFO  [worker-4] Processed batch 108
+2026-10-08 10:00:49 INFO  [worker-5] Processed batch 109
+2026-10-08 10:00:50 INFO  [worker-6] Processed batch 110
+2026-10-08 10:00:51 INFO  [worker-7] Processed batch 111
+2026-10-08 10:00:52 INFO  [worker-0] Processed batch 112
+2026-10-08 10:00:53 INFO  [worker-1] Processed batch 113
+2026-10-08 10:00:54 INFO  [worker-2] Processed batch 114
+2026-10-08 10:00:55 INFO  [worker-3] Processed batch 115
+2026-10-08 10:00:56 INFO  [worker-4] Processed batch 116
+2026-10-08 10:00:57 INFO  [worker-5] Processed batch 117
+2026-10-08 10:00:58 INFO  [worker-6] Processed batch 118
+2026-10-08 10:00:59 INFO  [worker-7] Processed batch 119
+2026-10-08 10:00:00 INFO  [worker-0] Processed batch 120
+2026-10-08 10:00:01 INFO  [worker-1] Processed batch 121
+2026-10-08 10:00:02 INFO  [worker-2] Processed batch 122
+2026-10-08 10:00:03 INFO  [worker-3] Processed batch 123
+2026-10-08 10:00:04 INFO  [worker-4] Processed batch 124
+2026-10-08 10:00:05 INFO  [worker-5] Processed batch 125
+2026-10-08 10:00:06 INFO  [worker-6] Processed batch 126
+2026-10-08 10:00:07 INFO  [worker-7] Processed batch 127
+2026-10-08 10:00:08 INFO  [worker-0] Processed batch 128
+2026-10-08 10:00:09 INFO  [worker-1] Processed batch 129
+2026-10-08 10:00:10 INFO  [worker-2] Processed batch 130
+2026-10-08 10:00:11 INFO  [worker-3] Processed batch 131
+2026-10-08 10:00:12 INFO  [worker-4] Processed batch 132
+2026-10-08 10:00:13 INFO  [worker-5] Processed batch 133
+2026-10-08 10:00:14 INFO  [worker-6] Processed batch 134
+2026-10-08 10:00:15 INFO  [worker-7] Processed batch 135
+2026-10-08 10:00:16 INFO  [worker-0] Processed batch 136
+2026-10-08 10:00:17 INFO  [worker-1] Processed batch 137
+2026-10-08 10:00:18 INFO  [worker-2] Processed batch 138
+2026-10-08 10:00:19 INFO  [worker-3] Processed batch 139
+2026-10-08 10:00:20 INFO  [worker-4] Processed batch 140
+2026-10-08 10:00:21 INFO  [worker-5] Processed batch 141
+2026-10-08 10:00:22 INFO  [worker-6] Processed batch 142
+2026-10-08 10:00:23 INFO  [worker-7] Processed batch 143
+2026-10-08 10:00:24 INFO  [worker-0] Processed batch 144
+2026-10-08 10:00:25 INFO  [worker-1] Processed batch 145
+2026-10-08 10:00:26 INFO  [worker-2] Processed batch 146
+2026-10-08 10:00:27 INFO  [worker-3] Processed batch 147
+2026-10-08 10:00:28 INFO  [worker-4] Processed batch 148
+2026-10-08 10:00:29 INFO  [worker-5] Processed batch 149
+2026-10-08 10:00:30 INFO  [worker-6] Processed batch 150
+2026-10-08 10:00:31 INFO  [worker-7] Processed batch 151
+2026-10-08 10:00:32 INFO  [worker-0] Processed batch 152
+2026-10-08 10:00:33 INFO  [worker-1] Processed batch 153
+2026-10-08 10:00:34 INFO  [worker-2] Processed batch 154
+2026-10-08 10:00:35 INFO  [worker-3] Processed batch 155
+2026-10-08 10:00:36 INFO  [worker-4] Processed batch 156
+2026-10-08 10:00:37 INFO  [worker-5] Processed batch 157
+2026-10-08 10:00:38 INFO  [worker-6] Processed batch 158
+2026-10-08 10:00:39 INFO  [worker-7] Processed batch 159
+2026-10-08 10:00:40 INFO  [worker-0] Processed batch 160
+2026-10-08 10:00:41 INFO  [worker-1] Processed batch 161
+2026-10-08 10:00:42 INFO  [worker-2] Processed batch 162
+2026-10-08 10:00:43 INFO  [worker-3] Processed batch 163
+2026-10-08 10:00:44 INFO  [worker-4] Processed batch 164
+2026-10-08 10:00:45 INFO  [worker-5] Processed batch 165
+2026-10-08 10:00:46 INFO  [worker-6] Processed batch 166
+2026-10-08 10:00:47 INFO  [worker-7] Processed batch 167
+2026-10-08 10:00:48 INFO  [worker-0] Processed batch 168
+2026-10-08 10:00:49 INFO  [worker-1] Processed batch 169
+2026-10-08 10:00:50 INFO  [worker-2] Processed batch 170
+2026-10-08 10:00:51 INFO  [worker-3] Processed batch 171
+2026-10-08 10:00:52 INFO  [worker-4] Processed batch 172
+2026-10-08 10:00:53 INFO  [worker-5] Processed batch 173
+2026-10-08 10:00:54 INFO  [worker-6] Processed batch 174
+2026-10-08 10:00:55 INFO  [worker-7] Processed batch 175
+2026-10-08 10:00:56 INFO  [worker-0] Processed batch 176
+2026-10-08 10:00:57 INFO  [worker-1] Processed batch 177
+2026-10-08 10:00:58 INFO  [worker-2] Processed batch 178
+2026-10-08 10:00:59 INFO  [worker-3] Processed batch 179
+2026-10-08 10:00:00 INFO  [worker-4] Processed batch 180
+2026-10-08 10:00:01 INFO  [worker-5] Processed batch 181
+2026-10-08 10:00:02 INFO  [worker-6] Processed batch 182
+2026-10-08 10:00:03 INFO  [worker-7] Processed batch 183
+2026-10-08 10:00:04 INFO  [worker-0] Processed batch 184
+2026-10-08 10:00:05 INFO  [worker-1] Processed batch 185
+2026-10-08 10:00:06 INFO  [worker-2] Processed batch 186
+2026-10-08 10:00:07 INFO  [worker-3] Processed batch 187
+2026-10-08 10:00:08 INFO  [worker-4] Processed batch 188
+2026-10-08 10:00:09 INFO  [worker-5] Processed batch 189
+2026-10-08 10:00:10 INFO  [worker-6] Processed batch 190
+2026-10-08 10:00:11 INFO  [worker-7] Processed batch 191
+2026-10-08 10:00:12 INFO  [worker-0] Processed batch 192
+2026-10-08 10:00:13 INFO  [worker-1] Processed batch 193
+2026-10-08 10:00:14 INFO  [worker-2] Processed batch 194
+2026-10-08 10:00:15 INFO  [worker-3] Processed batch 195
+2026-10-08 10:00:16 INFO  [worker-4] Processed batch 196
+2026-10-08 10:00:17 INFO  [worker-5] Processed batch 197
+2026-10-08 10:00:18 INFO  [worker-6] Processed batch 198
+2026-10-08 10:00:19 INFO  [worker-7] Processed batch 199
+2026-10-08 10:03:21 ERROR [worker-3] Batch 201 failed
+java.lang.NullPointerException: Cannot invoke "Customer.getAddress()" because "customer" is null
+    at com.example.shipping.LabelPrinter.print(LabelPrinter.java:57)
+    at com.example.shipping.ShipmentService.ship(ShipmentService.java:112)
+    at com.example.framework.Pipeline.step0(Pipeline.java:200)
+    at com.example.framework.Pipeline.step1(Pipeline.java:201)
+    at com.example.framework.Pipeline.step2(Pipeline.java:202)
+    at com.example.framework.Pipeline.step3(Pipeline.java:203)
+    at com.example.framework.Pipeline.step4(Pipeline.java:204)
+    at com.example.framework.Pipeline.step5(Pipeline.java:205)
+    at com.example.framework.Pipeline.step6(Pipeline.java:206)
+    at com.example.framework.Pipeline.step7(Pipeline.java:207)
+    at com.example.framework.Pipeline.step8(Pipeline.java:208)
+    at com.example.framework.Pipeline.step9(Pipeline.java:209)
+    at com.example.framework.Pipeline.step10(Pipeline.java:210)
+    at com.example.framework.Pipeline.step11(Pipeline.java:211)
+    at com.example.framework.Pipeline.step12(Pipeline.java:212)
+    at com.example.framework.Pipeline.step13(Pipeline.java:213)
+    at com.example.framework.Pipeline.step14(Pipeline.java:214)
+    at com.example.framework.Pipeline.step15(Pipeline.java:215)
+    at com.example.framework.Pipeline.step16(Pipeline.java:216)
+    at com.example.framework.Pipeline.step17(Pipeline.java:217)
+    at com.example.framework.Pipeline.step18(Pipeline.java:218)
+    at com.example.framework.Pipeline.step19(Pipeline.java:219)
+    at com.example.framework.Pipeline.step20(Pipeline.java:220)
+    at com.example.framework.Pipeline.step21(Pipeline.java:221)
+    at com.example.framework.Pipeline.step22(Pipeline.java:222)
+    at com.example.framework.Pipeline.step23(Pipeline.java:223)
+    at com.example.framework.Pipeline.step24(Pipeline.java:224)
+    at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-10-08 10:03:22 INFO  [worker-0] Processed batch 202
+2026-10-08 10:03:23 INFO  [worker-1] Processed batch 203
+2026-10-08 10:03:24 INFO  [worker-2] Processed batch 204
+2026-10-08 10:03:25 INFO  [worker-3] Processed batch 205
+2026-10-08 10:03:26 INFO  [worker-4] Processed batch 206
+2026-10-08 10:03:27 INFO  [worker-5] Processed batch 207
+2026-10-08 10:03:28 INFO  [worker-6] Processed batch 208
+2026-10-08 10:03:29 INFO  [worker-7] Processed batch 209
+2026-10-08 10:03:30 INFO  [worker-0] Processed batch 210
+2026-10-08 10:03:31 INFO  [worker-1] Processed batch 211
+2026-10-08 10:03:32 INFO  [worker-2] Processed batch 212
+2026-10-08 10:03:33 INFO  [worker-3] Processed batch 213
+2026-10-08 10:03:34 INFO  [worker-4] Processed batch 214
+2026-10-08 10:03:35 INFO  [worker-5] Processed batch 215
+2026-10-08 10:03:36 INFO  [worker-6] Processed batch 216
+2026-10-08 10:03:37 INFO  [worker-7] Processed batch 217
+2026-10-08 10:03:38 INFO  [worker-0] Processed batch 218
+2026-10-08 10:03:39 INFO  [worker-1] Processed batch 219
+2026-10-08 10:03:40 INFO  [worker-2] Processed batch 220
+2026-10-08 10:03:41 INFO  [worker-3] Processed batch 221
+2026-10-08 10:03:42 INFO  [worker-4] Processed batch 222
+2026-10-08 10:03:43 INFO  [worker-5] Processed batch 223
+2026-10-08 10:03:44 INFO  [worker-6] Processed batch 224
+2026-10-08 10:03:45 INFO  [worker-7] Processed batch 225
+2026-10-08 10:03:46 INFO  [worker-0] Processed batch 226
+2026-10-08 10:03:47 INFO  [worker-1] Processed batch 227
+2026-10-08 10:03:48 INFO  [worker-2] Processed batch 228
+2026-10-08 10:03:49 INFO  [worker-3] Processed batch 229
+2026-10-08 10:03:50 INFO  [worker-4] Processed batch 230
+2026-10-08 10:03:51 INFO  [worker-5] Processed batch 231
