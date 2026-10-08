@@ -21,7 +21,8 @@ python claude_code/setup_check.py      # 다시 확인, [OK] 두 줄이 나와�
 
 ## 1. Claude Code를 headroom으로 실행 (터미널 1)
 ```powershell
-$env:HEADROOM_DISABLE_KOMPRESS="1"       # AI 압축 모델 끄기 (SSL로 다운로드 안 될 때)
+$env:HEADROOM_DISABLE_KOMPRESS="1"            # AI 압축 모델 끄기 (SSL로 다운로드 안 될 때)
+$env:HEADROOM_DISABLE_KOMPRESS_FALLBACK="1"   # 위 설정만으로는 남는 내용을 여전히 AI 모델로 보냄 → 이것도 꺼야 완전히 꺼짐
 headroom wrap claude --code-memory none
 ```
 - `--code-memory none`: 코드 탐색 도구(Serena) 설치를 건너뜀. 회사망에서 설치가 막힐 수 있어서 빼 둠.
@@ -72,6 +73,85 @@ python claude_code/emit.py yaml 을 실행하고, replicas가 0인 서비스를 
 Claude Code는 질문 하나에 요청을 여러 번 보냅니다 (도구 실행 전, 도구 결과를 받은 뒤, 제목 생성 등). `cat` 결과가 들어간 요청은 **명령 실행 직후의 요청**이고, 그 행의 MSG SAVED가 높게 나옵니다.
 
 맨 위 `Session / Lifetime / Historical` 탭으로 이번 실행분, 누적, 기간별을 바꿔 볼 수 있습니다.
+
+## 문제 해결
+
+### `Claude Code has both ANTHROPIC_API_KEY ... and ANTHROPIC_AUTH_TOKEN ... set`
+`~/.claude/settings.json`(Windows: `C:\Users\<이름>\.claude\settings.json`)의 `env`에 인증 키가 둘 다 있어서
+headroom이 실행 전에 멈춘 것입니다. **둘 중 하나만** 남겨야 합니다.
+
+| 남길 키 | 이런 경우 |
+|---|---|
+| `ANTHROPIC_AUTH_TOKEN` | 회사 게이트웨이를 씀 (`env`에 `ANTHROPIC_BASE_URL`이 회사 주소로 있음) |
+| `ANTHROPIC_API_KEY` | Anthropic API 키(`sk-ant-...`)로 직접 결제 |
+
+어느 쪽인지 모르면 사내 Claude Code 설치 안내나 담당자에게 확인하세요.
+
+**방법 A — 이 프로젝트에서만 끄기 (권장, 전역 설정은 그대로)**
+이 저장소 폴더에 `.claude/settings.local.json`을 만들고, 안 쓸 키를 빈 값으로 덮어씁니다.
+```json
+{
+  "env": {
+    "ANTHROPIC_API_KEY": ""
+  }
+}
+```
+(`ANTHROPIC_AUTH_TOKEN`을 끌 거면 그 이름으로 바꿉니다.) 이 파일은 `.gitignore`에 들어 있어 커밋되지 않습니다.
+
+PowerShell로 만들 때는 BOM 없는 UTF-8로 써야 합니다 (`Out-File -Encoding utf8`은 Windows PowerShell 5.1에서 BOM을 붙여 headroom이 읽지 못함).
+```powershell
+[IO.File]::WriteAllText("$PWD\.claude\settings.local.json", '{ "env": { "ANTHROPIC_API_KEY": "" } }')
+```
+headroom이 각 설정 파일에서 무엇을 보는지(키 값은 빼고) 확인하려면, wrap을 실행하는 폴더에서:
+```powershell
+python <Headroom-test 경로>\claude_code\check_auth.py
+```
+
+**방법 B — 전역 설정에서 지우기**
+`settings.json`을 백업한 뒤 `env`에서 안 쓰는 키 한 줄을 지웁니다. 모든 프로젝트의 Claude Code에 적용됩니다.
+
+### `401 Invalid bearer token` / `Please run /login` (회사 게이트웨이 사용 시)
+`headroom wrap`은 회사 게이트웨이 주소를 **터미널 환경변수 `ANTHROPIC_BASE_URL`에서만** 찾습니다.
+주소가 `settings.json`에만 있으면 headroom이 그걸 모르고 Anthropic 본사(api.anthropic.com)로 보내서, 회사 토큰이 거부됩니다.
+
+wrap 전에 같은 터미널에서 회사 주소를 넣어 주세요 (`settings.json`의 `ANTHROPIC_BASE_URL` 값 그대로).
+```powershell
+$env:ANTHROPIC_BASE_URL="https://회사-게이트웨이-주소"
+headroom wrap claude --code-memory none
+```
+실행 시 `ANTHROPIC_BASE_URL=http://127.0.0.1:8787 → upstream https://회사-게이트웨이-주소` 줄이 나오면
+`Claude Code → headroom → 회사 게이트웨이` 순서로 연결된 것입니다.
+이전에 띄운 headroom 프록시가 남아 있으면 그걸 재사용해 예전 주소로 보낼 수 있으니, 안 되면 PC를 재시작하거나 남은 `headroom` 프로세스를 종료하고 다시 실행하세요.
+
+## 로그 압축 테스트 (`logs/*.txt`)
+저장소의 `logs/` 폴더에 정답이 하나씩 숨어 있는 로그 파일 8개가 있습니다.
+Claude Code에 **`python logs/view.py <이름>`을 실행하라고** 시키세요.
+```
+python logs/view.py worker 를 실행하고, 그 출력만 보고 뭐가 문제인지 알려줘
+```
+
+> **`cat`으로 읽게 하면 압축되지 않습니다.** headroom 프록시는 `cat`/`head`/`tail`/`Read` 결과를 *파일 읽기*로 보고
+> 그대로 둡니다 (Claude가 그 파일을 정확히 고쳐야 할 수 있어서). 실제 에이전트는 로그를 보통 `kubectl logs`, 빌드, 테스트 같은
+> **프로그램 실행 결과**로 보므로, `view.py`가 그 역할을 합니다 (파일 내용을 그대로 출력).
+
+프록시로 미리 돌려 본 결과 (Claude Code와 같은 요청 형식, 테스트용 토크나이저라 토큰 수는 실제와 다르고 비율만 참고):
+
+| 파일 | 질문 | 정답 | 절약 |
+|---|---|---|---|
+| `worker` | 뭐가 문제야? | job 4321 out of memory | ~99% |
+| `api` | 에러를 전부 찾아줘 | 3개: 카드 거절(ORD-8812) / 디스크 97% / JWT 검증 실패 | ~97% |
+| `shipping` | 무슨 예외가 어디서 났어? | NullPointerException, LabelPrinter.java:57 | ~94% |
+| `search` | 이상한 점 있어? | 에러 없음, 응답시간 20ms → 900ms 증가 | ~99% (**정답 줄이 전부 생략됨**) |
+| `health` | 문제 있어? | 문제 없음 | ~99% |
+| `cache` | redis timeout 경고가 몇 번 났어? | 57번 | ~1% |
+| `build` | 빌드가 왜 실패했어? | PaymentGateway.java:142 | 0% (프록시가 효과 부족으로 원본 유지) |
+| `pytest` | 어떤 테스트가 실패했어? | test_refund_rounding, test_token_expiry | 0% |
+
+`search`는 INFO 줄 안에만 신호가 있어 headroom이 전부 생략합니다. Claude가 `headroom_retrieve`로 원본을 다시 가져와 맞히는지가 핵심입니다.
+
+### 덤: `cat` vs `view.py` 비교
+`cat logs/worker.txt 해서 뭐가 문제인지 알려줘`와 `python logs/view.py worker 를 실행하고 뭐가 문제인지 알려줘`를 각각 시켜 보고
+대시보드 Recent Requests를 비교하면, `cat` 쪽은 절약이 거의 없습니다.
 
 ## 문제 해결
 
