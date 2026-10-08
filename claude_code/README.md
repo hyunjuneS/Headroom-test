@@ -96,5 +96,15 @@ python <Headroom-test 경로>\claude_code\check_auth.py
 **방법 B — 전역 설정에서 지우기**
 `settings.json`을 백업한 뒤 `env`에서 안 쓰는 키 한 줄을 지웁니다. 모든 프로젝트의 Claude Code에 적용됩니다.
 
-회사 게이트웨이(`ANTHROPIC_BASE_URL`)를 쓰고 있어도 괜찮습니다. `headroom wrap`은 기존 주소를 그대로 upstream으로 삼아
-`Claude Code → headroom → 회사 게이트웨이` 순서로 연결합니다. 실행 시 `ANTHROPIC_BASE_URL=... → upstream <회사 주소>` 줄로 확인할 수 있습니다.
+### `401 Invalid bearer token` / `Please run /login` (회사 게이트웨이 사용 시)
+`headroom wrap`은 회사 게이트웨이 주소를 **터미널 환경변수 `ANTHROPIC_BASE_URL`에서만** 찾습니다.
+주소가 `settings.json`에만 있으면 headroom이 그걸 모르고 Anthropic 본사(api.anthropic.com)로 보내서, 회사 토큰이 거부됩니다.
+
+wrap 전에 같은 터미널에서 회사 주소를 넣어 주세요 (`settings.json`의 `ANTHROPIC_BASE_URL` 값 그대로).
+```powershell
+$env:ANTHROPIC_BASE_URL="https://회사-게이트웨이-주소"
+headroom wrap claude --code-memory none
+```
+실행 시 `ANTHROPIC_BASE_URL=http://127.0.0.1:8787 → upstream https://회사-게이트웨이-주소` 줄이 나오면
+`Claude Code → headroom → 회사 게이트웨이` 순서로 연결된 것입니다.
+이전에 띄운 headroom 프록시가 남아 있으면 그걸 재사용해 예전 주소로 보낼 수 있으니, 안 되면 PC를 재시작하거나 남은 `headroom` 프로세스를 종료하고 다시 실행하세요.
