@@ -108,3 +108,23 @@ headroom wrap claude --code-memory none
 실행 시 `ANTHROPIC_BASE_URL=http://127.0.0.1:8787 → upstream https://회사-게이트웨이-주소` 줄이 나오면
 `Claude Code → headroom → 회사 게이트웨이` 순서로 연결된 것입니다.
 이전에 띄운 headroom 프록시가 남아 있으면 그걸 재사용해 예전 주소로 보낼 수 있으니, 안 되면 PC를 재시작하거나 남은 `headroom` 프로세스를 종료하고 다시 실행하세요.
+
+## 로그 압축 테스트 (`logs.py`)
+Claude Code에 `python claude_code/logs.py <case> 를 실행하고 <질문>` 형태로 시키고, 답이 맞는지와 대시보드 절약량을 봅니다.
+`python claude_code/logs.py list`로 질문과 정답을 볼 수 있습니다.
+
+라이브러리로 미리 돌려 본 결과 (AI 모델 끔, Claude Code `Bash` 출력 기준):
+
+| case | 내용 | 토큰 | 압축 후 정답이 보이나 |
+|---|---|---|---|
+| `huge` | 5000줄 + FATAL 1줄 | 79,692 → 154 | 보임 |
+| `multi` | 1000줄 + 서로 다른 ERROR 3개 | 18,113 → 430 | 3개 다 보임 |
+| `trace` | 200줄 + Java 스택트레이스 | 4,269 → 229 | 예외·위치 보임 |
+| `build` | 빌드 로그 + 마지막 ERROR | 6,081 → 808 | 보임 |
+| `count` | 같은 WARN 57번 | 거의 안 줄어듦 | 다 보임 (`repeated N times`로 묶인 부분 있음) |
+| `pytest` | PASSED 400 + FAILED 2 | 안 줄어듦 | 보임 |
+| `trend` | 에러 없이 지연시간만 20→900ms 증가 | 8,078 → 29 | **안 보임** (INFO 전부 생략, 원본 조회 표시만 남음) |
+| `ok` | 정상 로그만 700줄 | 10,200 → 29 | 문제 없음 (내용 전부 생략) |
+
+`trend`처럼 INFO 줄에만 신호가 있으면 headroom이 전부 생략합니다. 이때 Claude가 `headroom_retrieve` 도구로 원본을 다시 가져오는지 보는 것이 이 테스트의 핵심입니다
+(`--no-mcp`로 실행하면 이 도구가 없어 원본을 못 가져옵니다).
