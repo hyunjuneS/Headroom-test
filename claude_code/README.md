@@ -84,6 +84,15 @@ headroom이 실행 전에 멈춘 것입니다. **둘 중 하나만** 남겨야 �
 ```
 (`ANTHROPIC_AUTH_TOKEN`을 끌 거면 그 이름으로 바꿉니다.) 이 파일은 `.gitignore`에 들어 있어 커밋되지 않습니다.
 
+PowerShell로 만들 때는 BOM 없는 UTF-8로 써야 합니다 (`Out-File -Encoding utf8`은 Windows PowerShell 5.1에서 BOM을 붙여 headroom이 읽지 못함).
+```powershell
+[IO.File]::WriteAllText("$PWD\.claude\settings.local.json", '{ "env": { "ANTHROPIC_API_KEY": "" } }')
+```
+headroom이 각 설정 파일에서 무엇을 보는지(키 값은 빼고) 확인하려면, wrap을 실행하는 폴더에서:
+```powershell
+python <Headroom-test 경로>\claude_code\check_auth.py
+```
+
 **방법 B — 전역 설정에서 지우기**
 `settings.json`을 백업한 뒤 `env`에서 안 쓰는 키 한 줄을 지웁니다. 모든 프로젝트의 Claude Code에 적용됩니다.
 
