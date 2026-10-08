@@ -58,6 +58,19 @@ python claude_code/emit.py yaml 을 실행하고, replicas가 0인 서비스를 
 | **Prefix Cache Impact** | 압축 때문에 Anthropic 캐시가 깨진 손해와 비교한 순이익 (NET) |
 | **Recent Requests** | 요청별 입력 토큰과 절약 비율. 행을 누르면 자세히 |
 
+### 요청별로 보기: Recent Requests
+맨 아래 **Recent Requests** 표에서 요청 하나하나를 봅니다 (`dashboard-recent-requests.png`). 최근 25개, 맨 위가 최신입니다.
+
+| 열 | 뜻 |
+|---|---|
+| INPUT | **압축 후** 실제로 보낸 입력 토큰 |
+| MSG SAVED | 그 요청에서 줄인 비율 |
+| LATENCY | 걸린 시간 |
+
+행을 누르면 펼쳐집니다: **ORIGINAL TOKENS**(원래) → **COMPRESSED TOKENS**(보낸 양), **TOKENS REMOVED**(줄인 양), **TRANSFORMS APPLIED**(사용한 압축기, 예: `router:log:0.03` = 로그 압축기로 3%까지 줄임).
+
+Claude Code는 질문 하나에 요청을 여러 번 보냅니다 (도구 실행 전, 도구 결과를 받은 뒤, 제목 생성 등). `cat` 결과가 들어간 요청은 **명령 실행 직후의 요청**이고, 그 행의 MSG SAVED가 높게 나옵니다.
+
 맨 위 `Session / Lifetime / Historical` 탭으로 이번 실행분, 누적, 기간별을 바꿔 볼 수 있습니다.
 
 ## 문제 해결
