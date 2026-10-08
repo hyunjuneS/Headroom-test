@@ -1,0 +1,2002 @@
+[
+  {
+    "order_id": "ORD-10000",
+    "customer_id": "CUST-008",
+    "status": "DELIVERED",
+    "amount": 12.38,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10001",
+    "customer_id": "CUST-007",
+    "status": "DELIVERED",
+    "amount": 204.63,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-05T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10002",
+    "customer_id": "CUST-003",
+    "status": "DELIVERED",
+    "amount": 13.79,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-05T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10003",
+    "customer_id": "CUST-002",
+    "status": "DELIVERED",
+    "amount": 170.57,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-02T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10004",
+    "customer_id": "CUST-038",
+    "status": "DELIVERED",
+    "amount": 87.07,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10005",
+    "customer_id": "CUST-022",
+    "status": "DELIVERED",
+    "amount": 86.97,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T02:00:00Z"
+  },
+  {
+    "order_id": "ORD-10006",
+    "customer_id": "CUST-025",
+    "status": "DELIVERED",
+    "amount": 33.53,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10007",
+    "customer_id": "CUST-030",
+    "status": "DELIVERED",
+    "amount": 163.19,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-05T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10008",
+    "customer_id": "CUST-040",
+    "status": "DELIVERED",
+    "amount": 266.21,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T22:00:00Z"
+  },
+  {
+    "order_id": "ORD-10009",
+    "customer_id": "CUST-005",
+    "status": "DELIVERED",
+    "amount": 18.52,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10010",
+    "customer_id": "CUST-007",
+    "status": "DELIVERED",
+    "amount": 117.14,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-07T11:00:00Z"
+  },
+  {
+    "order_id": "ORD-10011",
+    "customer_id": "CUST-011",
+    "status": "DELIVERED",
+    "amount": 114.2,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T22:00:00Z"
+  },
+  {
+    "order_id": "ORD-10012",
+    "customer_id": "CUST-005",
+    "status": "DELIVERED",
+    "amount": 184.69,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10013",
+    "customer_id": "CUST-011",
+    "status": "DELIVERED",
+    "amount": 141.37,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10014",
+    "customer_id": "CUST-015",
+    "status": "DELIVERED",
+    "amount": 206.96,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-07T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10015",
+    "customer_id": "CUST-021",
+    "status": "DELIVERED",
+    "amount": 123.34,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-05T22:00:00Z"
+  },
+  {
+    "order_id": "ORD-10016",
+    "customer_id": "CUST-021",
+    "status": "DELIVERED",
+    "amount": 67.72,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10017",
+    "customer_id": "CUST-010",
+    "status": "DELIVERED",
+    "amount": 83.14,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-05T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10018",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 225.37,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-04T11:00:00Z"
+  },
+  {
+    "order_id": "ORD-10019",
+    "customer_id": "CUST-015",
+    "status": "DELIVERED",
+    "amount": 299.21,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-04T02:00:00Z"
+  },
+  {
+    "order_id": "ORD-10020",
+    "customer_id": "CUST-004",
+    "status": "DELIVERED",
+    "amount": 259.03,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T21:00:00Z"
+  },
+  {
+    "order_id": "ORD-10021",
+    "customer_id": "CUST-028",
+    "status": "DELIVERED",
+    "amount": 180.94,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-05T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10022",
+    "customer_id": "CUST-034",
+    "status": "DELIVERED",
+    "amount": 79.17,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T23:00:00Z"
+  },
+  {
+    "order_id": "ORD-10023",
+    "customer_id": "CUST-008",
+    "status": "DELIVERED",
+    "amount": 206.1,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10024",
+    "customer_id": "CUST-022",
+    "status": "DELIVERED",
+    "amount": 37.91,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T00:00:00Z"
+  },
+  {
+    "order_id": "ORD-10025",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 291.71,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10026",
+    "customer_id": "CUST-020",
+    "status": "DELIVERED",
+    "amount": 253.29,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10027",
+    "customer_id": "CUST-024",
+    "status": "DELIVERED",
+    "amount": 229.94,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10028",
+    "customer_id": "CUST-021",
+    "status": "DELIVERED",
+    "amount": 149.14,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10029",
+    "customer_id": "CUST-016",
+    "status": "DELIVERED",
+    "amount": 22.09,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T23:00:00Z"
+  },
+  {
+    "order_id": "ORD-10030",
+    "customer_id": "CUST-032",
+    "status": "DELIVERED",
+    "amount": 245.73,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T21:00:00Z"
+  },
+  {
+    "order_id": "ORD-10031",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 284.32,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-05T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10032",
+    "customer_id": "CUST-028",
+    "status": "DELIVERED",
+    "amount": 289.49,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T06:00:00Z"
+  },
+  {
+    "order_id": "ORD-10033",
+    "customer_id": "CUST-020",
+    "status": "DELIVERED",
+    "amount": 122.7,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-05T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10034",
+    "customer_id": "CUST-008",
+    "status": "DELIVERED",
+    "amount": 78.13,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10035",
+    "customer_id": "CUST-036",
+    "status": "DELIVERED",
+    "amount": 72.88,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T22:00:00Z"
+  },
+  {
+    "order_id": "ORD-10036",
+    "customer_id": "CUST-004",
+    "status": "DELIVERED",
+    "amount": 72.54,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10037",
+    "customer_id": "CUST-016",
+    "status": "DELIVERED",
+    "amount": 87.15,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-05T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10038",
+    "customer_id": "CUST-037",
+    "status": "DELIVERED",
+    "amount": 174.98,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10039",
+    "customer_id": "CUST-013",
+    "status": "DELIVERED",
+    "amount": 32.83,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-04T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10040",
+    "customer_id": "CUST-030",
+    "status": "DELIVERED",
+    "amount": 259.83,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10041",
+    "customer_id": "CUST-007",
+    "status": "DELIVERED",
+    "amount": 22.88,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T06:00:00Z"
+  },
+  {
+    "order_id": "ORD-10042",
+    "customer_id": "CUST-013",
+    "status": "DELIVERED",
+    "amount": 163.2,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-02T08:00:00Z"
+  },
+  {
+    "order_id": "ORD-10043",
+    "customer_id": "CUST-030",
+    "status": "DELIVERED",
+    "amount": 78.69,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10044",
+    "customer_id": "CUST-007",
+    "status": "DELIVERED",
+    "amount": 19.92,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10045",
+    "customer_id": "CUST-011",
+    "status": "DELIVERED",
+    "amount": 124.89,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-07T12:00:00Z"
+  },
+  {
+    "order_id": "ORD-10046",
+    "customer_id": "CUST-004",
+    "status": "DELIVERED",
+    "amount": 53.57,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-03T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10047",
+    "customer_id": "CUST-019",
+    "status": "DELIVERED",
+    "amount": 129.79,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T15:00:00Z"
+  },
+  {
+    "order_id": "ORD-10048",
+    "customer_id": "CUST-010",
+    "status": "DELIVERED",
+    "amount": 61.02,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-05T23:00:00Z"
+  },
+  {
+    "order_id": "ORD-10049",
+    "customer_id": "CUST-035",
+    "status": "DELIVERED",
+    "amount": 22.98,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10050",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 153.34,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10051",
+    "customer_id": "CUST-006",
+    "status": "DELIVERED",
+    "amount": 256.15,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T21:00:00Z"
+  },
+  {
+    "order_id": "ORD-10052",
+    "customer_id": "CUST-016",
+    "status": "DELIVERED",
+    "amount": 124.11,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-05T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10053",
+    "customer_id": "CUST-003",
+    "status": "DELIVERED",
+    "amount": 187.72,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-05T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10054",
+    "customer_id": "CUST-034",
+    "status": "DELIVERED",
+    "amount": 98.33,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T22:00:00Z"
+  },
+  {
+    "order_id": "ORD-10055",
+    "customer_id": "CUST-021",
+    "status": "DELIVERED",
+    "amount": 75.41,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10056",
+    "customer_id": "CUST-020",
+    "status": "DELIVERED",
+    "amount": 139.88,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10057",
+    "customer_id": "CUST-037",
+    "status": "DELIVERED",
+    "amount": 298.85,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10058",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 44.07,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T11:00:00Z"
+  },
+  {
+    "order_id": "ORD-10059",
+    "customer_id": "CUST-019",
+    "status": "DELIVERED",
+    "amount": 51.54,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10060",
+    "customer_id": "CUST-034",
+    "status": "DELIVERED",
+    "amount": 7.31,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T03:00:00Z"
+  },
+  {
+    "order_id": "ORD-10061",
+    "customer_id": "CUST-009",
+    "status": "DELIVERED",
+    "amount": 83.02,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-05T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10062",
+    "customer_id": "CUST-018",
+    "status": "DELIVERED",
+    "amount": 88.12,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T06:00:00Z"
+  },
+  {
+    "order_id": "ORD-10063",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 154.1,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10064",
+    "customer_id": "CUST-028",
+    "status": "DELIVERED",
+    "amount": 249.66,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10065",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 52.67,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10066",
+    "customer_id": "CUST-036",
+    "status": "DELIVERED",
+    "amount": 7.85,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10067",
+    "customer_id": "CUST-003",
+    "status": "DELIVERED",
+    "amount": 251.21,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10068",
+    "customer_id": "CUST-009",
+    "status": "DELIVERED",
+    "amount": 17.34,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T06:00:00Z"
+  },
+  {
+    "order_id": "ORD-10069",
+    "customer_id": "CUST-016",
+    "status": "DELIVERED",
+    "amount": 201.75,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-07T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10070",
+    "customer_id": "CUST-040",
+    "status": "DELIVERED",
+    "amount": 226.1,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-07T05:00:00Z"
+  },
+  {
+    "order_id": "ORD-10071",
+    "customer_id": "CUST-027",
+    "status": "DELIVERED",
+    "amount": 12.31,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T21:00:00Z"
+  },
+  {
+    "order_id": "ORD-10072",
+    "customer_id": "CUST-016",
+    "status": "DELIVERED",
+    "amount": 83.71,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10073",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 70.62,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-03T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10074",
+    "customer_id": "CUST-015",
+    "status": "DELIVERED",
+    "amount": 11.98,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-03T08:00:00Z"
+  },
+  {
+    "order_id": "ORD-10075",
+    "customer_id": "CUST-005",
+    "status": "DELIVERED",
+    "amount": 290.23,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10076",
+    "customer_id": "CUST-026",
+    "status": "DELIVERED",
+    "amount": 205.46,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T03:00:00Z"
+  },
+  {
+    "order_id": "ORD-10077",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 57.68,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10078",
+    "customer_id": "CUST-028",
+    "status": "DELIVERED",
+    "amount": 106.98,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-05T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10079",
+    "customer_id": "CUST-008",
+    "status": "DELIVERED",
+    "amount": 118.63,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10080",
+    "customer_id": "CUST-028",
+    "status": "DELIVERED",
+    "amount": 5.5,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T23:00:00Z"
+  },
+  {
+    "order_id": "ORD-10081",
+    "customer_id": "CUST-013",
+    "status": "DELIVERED",
+    "amount": 112.45,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10082",
+    "customer_id": "CUST-021",
+    "status": "DELIVERED",
+    "amount": 200.7,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10083",
+    "customer_id": "CUST-020",
+    "status": "DELIVERED",
+    "amount": 201.73,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10084",
+    "customer_id": "CUST-036",
+    "status": "DELIVERED",
+    "amount": 42.55,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-04T21:00:00Z"
+  },
+  {
+    "order_id": "ORD-10085",
+    "customer_id": "CUST-012",
+    "status": "DELIVERED",
+    "amount": 186.58,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-05T00:00:00Z"
+  },
+  {
+    "order_id": "ORD-10086",
+    "customer_id": "CUST-020",
+    "status": "DELIVERED",
+    "amount": 89.64,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-05T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10087",
+    "customer_id": "CUST-021",
+    "status": "DELIVERED",
+    "amount": 142.17,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10088",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 239.15,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10089",
+    "customer_id": "CUST-033",
+    "status": "DELIVERED",
+    "amount": 200.84,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10090",
+    "customer_id": "CUST-020",
+    "status": "DELIVERED",
+    "amount": 71.27,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10091",
+    "customer_id": "CUST-016",
+    "status": "DELIVERED",
+    "amount": 295.26,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10092",
+    "customer_id": "CUST-037",
+    "status": "DELIVERED",
+    "amount": 62.36,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-04T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10093",
+    "customer_id": "CUST-010",
+    "status": "DELIVERED",
+    "amount": 198.54,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-07T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10094",
+    "customer_id": "CUST-015",
+    "status": "DELIVERED",
+    "amount": 56.89,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10095",
+    "customer_id": "CUST-016",
+    "status": "DELIVERED",
+    "amount": 275.65,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-02T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10096",
+    "customer_id": "CUST-034",
+    "status": "DELIVERED",
+    "amount": 296.43,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10097",
+    "customer_id": "CUST-040",
+    "status": "DELIVERED",
+    "amount": 245.43,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10098",
+    "customer_id": "CUST-029",
+    "status": "DELIVERED",
+    "amount": 269.68,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-03T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10099",
+    "customer_id": "CUST-018",
+    "status": "DELIVERED",
+    "amount": 230.92,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10100",
+    "customer_id": "CUST-018",
+    "status": "DELIVERED",
+    "amount": 134.76,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T10:00:00Z"
+  },
+  {
+    "order_id": "ORD-10101",
+    "customer_id": "CUST-021",
+    "status": "DELIVERED",
+    "amount": 268.44,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10102",
+    "customer_id": "CUST-025",
+    "status": "DELIVERED",
+    "amount": 209.72,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10103",
+    "customer_id": "CUST-022",
+    "status": "DELIVERED",
+    "amount": 165.07,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10104",
+    "customer_id": "CUST-025",
+    "status": "DELIVERED",
+    "amount": 271.93,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10105",
+    "customer_id": "CUST-025",
+    "status": "DELIVERED",
+    "amount": 145.71,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T12:00:00Z"
+  },
+  {
+    "order_id": "ORD-10106",
+    "customer_id": "CUST-027",
+    "status": "DELIVERED",
+    "amount": 163.78,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T15:00:00Z"
+  },
+  {
+    "order_id": "ORD-10107",
+    "customer_id": "CUST-015",
+    "status": "DELIVERED",
+    "amount": 85.52,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T10:00:00Z"
+  },
+  {
+    "order_id": "ORD-10108",
+    "customer_id": "CUST-026",
+    "status": "DELIVERED",
+    "amount": 218.63,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-05T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10109",
+    "customer_id": "CUST-002",
+    "status": "DELIVERED",
+    "amount": 272.54,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T00:00:00Z"
+  },
+  {
+    "order_id": "ORD-10110",
+    "customer_id": "CUST-006",
+    "status": "DELIVERED",
+    "amount": 194.61,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-02T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10111",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 116.84,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-03T10:00:00Z"
+  },
+  {
+    "order_id": "ORD-10112",
+    "customer_id": "CUST-025",
+    "status": "DELIVERED",
+    "amount": 87.09,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T02:00:00Z"
+  },
+  {
+    "order_id": "ORD-10113",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 10.72,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10114",
+    "customer_id": "CUST-005",
+    "status": "DELIVERED",
+    "amount": 235.46,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T06:00:00Z"
+  },
+  {
+    "order_id": "ORD-10115",
+    "customer_id": "CUST-002",
+    "status": "DELIVERED",
+    "amount": 188.29,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T21:00:00Z"
+  },
+  {
+    "order_id": "ORD-10116",
+    "customer_id": "CUST-008",
+    "status": "DELIVERED",
+    "amount": 171.37,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T08:00:00Z"
+  },
+  {
+    "order_id": "ORD-10117",
+    "customer_id": "CUST-024",
+    "status": "DELIVERED",
+    "amount": 54.5,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T03:00:00Z"
+  },
+  {
+    "order_id": "ORD-10118",
+    "customer_id": "CUST-011",
+    "status": "DELIVERED",
+    "amount": 289.59,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10119",
+    "customer_id": "CUST-037",
+    "status": "DELIVERED",
+    "amount": 204.82,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T06:00:00Z"
+  },
+  {
+    "order_id": "ORD-10120",
+    "customer_id": "CUST-005",
+    "status": "DELIVERED",
+    "amount": 179.67,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10121",
+    "customer_id": "CUST-039",
+    "status": "DELIVERED",
+    "amount": 242.63,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10122",
+    "customer_id": "CUST-028",
+    "status": "DELIVERED",
+    "amount": 200.15,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T10:00:00Z"
+  },
+  {
+    "order_id": "ORD-10123",
+    "customer_id": "CUST-001",
+    "status": "DELIVERED",
+    "amount": 255.62,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T11:00:00Z"
+  },
+  {
+    "order_id": "ORD-10124",
+    "customer_id": "CUST-030",
+    "status": "DELIVERED",
+    "amount": 213.66,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10125",
+    "customer_id": "CUST-018",
+    "status": "DELIVERED",
+    "amount": 186.69,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-04T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10126",
+    "customer_id": "CUST-038",
+    "status": "DELIVERED",
+    "amount": 84.18,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10127",
+    "customer_id": "CUST-016",
+    "status": "DELIVERED",
+    "amount": 226.39,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T12:00:00Z"
+  },
+  {
+    "order_id": "ORD-10128",
+    "customer_id": "CUST-022",
+    "status": "DELIVERED",
+    "amount": 13.47,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T06:00:00Z"
+  },
+  {
+    "order_id": "ORD-10129",
+    "customer_id": "CUST-023",
+    "status": "DELIVERED",
+    "amount": 240.36,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-05T22:00:00Z"
+  },
+  {
+    "order_id": "ORD-10130",
+    "customer_id": "CUST-018",
+    "status": "DELIVERED",
+    "amount": 168.96,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10131",
+    "customer_id": "CUST-027",
+    "status": "DELIVERED",
+    "amount": 149.13,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-04T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10132",
+    "customer_id": "CUST-032",
+    "status": "DELIVERED",
+    "amount": 137.21,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10133",
+    "customer_id": "CUST-026",
+    "status": "DELIVERED",
+    "amount": 209.08,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-05T11:00:00Z"
+  },
+  {
+    "order_id": "ORD-10134",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 168.27,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10135",
+    "customer_id": "CUST-022",
+    "status": "DELIVERED",
+    "amount": 108.78,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-03T08:00:00Z"
+  },
+  {
+    "order_id": "ORD-10136",
+    "customer_id": "CUST-015",
+    "status": "DELIVERED",
+    "amount": 40.59,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T23:00:00Z"
+  },
+  {
+    "order_id": "ORD-10137",
+    "customer_id": "CUST-035",
+    "status": "PAYMENT_FAILED",
+    "amount": 285.51,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T23:00:00Z"
+  },
+  {
+    "order_id": "ORD-10138",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 86.57,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-05T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10139",
+    "customer_id": "CUST-007",
+    "status": "DELIVERED",
+    "amount": 250.63,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T05:00:00Z"
+  },
+  {
+    "order_id": "ORD-10140",
+    "customer_id": "CUST-020",
+    "status": "DELIVERED",
+    "amount": 9.17,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10141",
+    "customer_id": "CUST-004",
+    "status": "DELIVERED",
+    "amount": 168.24,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-07T15:00:00Z"
+  },
+  {
+    "order_id": "ORD-10142",
+    "customer_id": "CUST-007",
+    "status": "DELIVERED",
+    "amount": 262.45,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-04T15:00:00Z"
+  },
+  {
+    "order_id": "ORD-10143",
+    "customer_id": "CUST-029",
+    "status": "DELIVERED",
+    "amount": 105.51,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T15:00:00Z"
+  },
+  {
+    "order_id": "ORD-10144",
+    "customer_id": "CUST-008",
+    "status": "DELIVERED",
+    "amount": 247.52,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10145",
+    "customer_id": "CUST-004",
+    "status": "DELIVERED",
+    "amount": 49.76,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10146",
+    "customer_id": "CUST-008",
+    "status": "DELIVERED",
+    "amount": 169.63,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-05T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10147",
+    "customer_id": "CUST-015",
+    "status": "DELIVERED",
+    "amount": 233.83,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-04T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10148",
+    "customer_id": "CUST-038",
+    "status": "DELIVERED",
+    "amount": 297.06,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-05T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10149",
+    "customer_id": "CUST-040",
+    "status": "DELIVERED",
+    "amount": 288.23,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T06:00:00Z"
+  },
+  {
+    "order_id": "ORD-10150",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 199.83,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10151",
+    "customer_id": "CUST-005",
+    "status": "DELIVERED",
+    "amount": 51.18,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10152",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 90.92,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T09:00:00Z"
+  },
+  {
+    "order_id": "ORD-10153",
+    "customer_id": "CUST-030",
+    "status": "DELIVERED",
+    "amount": 26.0,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10154",
+    "customer_id": "CUST-038",
+    "status": "DELIVERED",
+    "amount": 200.05,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10155",
+    "customer_id": "CUST-015",
+    "status": "DELIVERED",
+    "amount": 196.05,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T01:00:00Z"
+  },
+  {
+    "order_id": "ORD-10156",
+    "customer_id": "CUST-011",
+    "status": "DELIVERED",
+    "amount": 238.83,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-07T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10157",
+    "customer_id": "CUST-019",
+    "status": "DELIVERED",
+    "amount": 134.55,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T22:00:00Z"
+  },
+  {
+    "order_id": "ORD-10158",
+    "customer_id": "CUST-026",
+    "status": "DELIVERED",
+    "amount": 283.09,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-04T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10159",
+    "customer_id": "CUST-006",
+    "status": "DELIVERED",
+    "amount": 181.42,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10160",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 12.63,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-07T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10161",
+    "customer_id": "CUST-038",
+    "status": "DELIVERED",
+    "amount": 285.48,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T05:00:00Z"
+  },
+  {
+    "order_id": "ORD-10162",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 158.09,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-02T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10163",
+    "customer_id": "CUST-028",
+    "status": "DELIVERED",
+    "amount": 192.26,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T11:00:00Z"
+  },
+  {
+    "order_id": "ORD-10164",
+    "customer_id": "CUST-027",
+    "status": "DELIVERED",
+    "amount": 103.33,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T13:00:00Z"
+  },
+  {
+    "order_id": "ORD-10165",
+    "customer_id": "CUST-032",
+    "status": "DELIVERED",
+    "amount": 90.02,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10166",
+    "customer_id": "CUST-006",
+    "status": "DELIVERED",
+    "amount": 97.78,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-07T12:00:00Z"
+  },
+  {
+    "order_id": "ORD-10167",
+    "customer_id": "CUST-033",
+    "status": "DELIVERED",
+    "amount": 248.35,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-07T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10168",
+    "customer_id": "CUST-030",
+    "status": "DELIVERED",
+    "amount": 126.91,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T19:00:00Z"
+  },
+  {
+    "order_id": "ORD-10169",
+    "customer_id": "CUST-032",
+    "status": "DELIVERED",
+    "amount": 189.5,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-03T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10170",
+    "customer_id": "CUST-009",
+    "status": "DELIVERED",
+    "amount": 278.66,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-04T03:00:00Z"
+  },
+  {
+    "order_id": "ORD-10171",
+    "customer_id": "CUST-002",
+    "status": "DELIVERED",
+    "amount": 292.08,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T05:00:00Z"
+  },
+  {
+    "order_id": "ORD-10172",
+    "customer_id": "CUST-020",
+    "status": "DELIVERED",
+    "amount": 167.5,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10173",
+    "customer_id": "CUST-008",
+    "status": "DELIVERED",
+    "amount": 141.13,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-07T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10174",
+    "customer_id": "CUST-032",
+    "status": "DELIVERED",
+    "amount": 280.13,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T08:00:00Z"
+  },
+  {
+    "order_id": "ORD-10175",
+    "customer_id": "CUST-027",
+    "status": "DELIVERED",
+    "amount": 251.24,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10176",
+    "customer_id": "CUST-010",
+    "status": "DELIVERED",
+    "amount": 118.16,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10177",
+    "customer_id": "CUST-005",
+    "status": "DELIVERED",
+    "amount": 86.49,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-07T16:00:00Z"
+  },
+  {
+    "order_id": "ORD-10178",
+    "customer_id": "CUST-018",
+    "status": "DELIVERED",
+    "amount": 247.06,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T18:00:00Z"
+  },
+  {
+    "order_id": "ORD-10179",
+    "customer_id": "CUST-038",
+    "status": "DELIVERED",
+    "amount": 299.68,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10180",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 106.81,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-04T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10181",
+    "customer_id": "CUST-021",
+    "status": "DELIVERED",
+    "amount": 261.53,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-04T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10182",
+    "customer_id": "CUST-027",
+    "status": "DELIVERED",
+    "amount": 17.88,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-07T12:00:00Z"
+  },
+  {
+    "order_id": "ORD-10183",
+    "customer_id": "CUST-025",
+    "status": "DELIVERED",
+    "amount": 296.58,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10184",
+    "customer_id": "CUST-033",
+    "status": "DELIVERED",
+    "amount": 289.78,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-07T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10185",
+    "customer_id": "CUST-007",
+    "status": "DELIVERED",
+    "amount": 160.16,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T04:00:00Z"
+  },
+  {
+    "order_id": "ORD-10186",
+    "customer_id": "CUST-027",
+    "status": "DELIVERED",
+    "amount": 261.93,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-04T08:00:00Z"
+  },
+  {
+    "order_id": "ORD-10187",
+    "customer_id": "CUST-022",
+    "status": "DELIVERED",
+    "amount": 188.86,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-01T10:00:00Z"
+  },
+  {
+    "order_id": "ORD-10188",
+    "customer_id": "CUST-035",
+    "status": "DELIVERED",
+    "amount": 117.1,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-06T15:00:00Z"
+  },
+  {
+    "order_id": "ORD-10189",
+    "customer_id": "CUST-035",
+    "status": "DELIVERED",
+    "amount": 15.59,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-06T21:00:00Z"
+  },
+  {
+    "order_id": "ORD-10190",
+    "customer_id": "CUST-019",
+    "status": "DELIVERED",
+    "amount": 299.24,
+    "currency": "KRW",
+    "items": 1,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-01T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10191",
+    "customer_id": "CUST-007",
+    "status": "DELIVERED",
+    "amount": 135.89,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-01T10:00:00Z"
+  },
+  {
+    "order_id": "ORD-10192",
+    "customer_id": "CUST-004",
+    "status": "DELIVERED",
+    "amount": 91.54,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-02T07:00:00Z"
+  },
+  {
+    "order_id": "ORD-10193",
+    "customer_id": "CUST-034",
+    "status": "DELIVERED",
+    "amount": 126.56,
+    "currency": "KRW",
+    "items": 2,
+    "warehouse": "ICN-1",
+    "created_at": "2026-10-02T02:00:00Z"
+  },
+  {
+    "order_id": "ORD-10194",
+    "customer_id": "CUST-040",
+    "status": "DELIVERED",
+    "amount": 261.9,
+    "currency": "KRW",
+    "items": 5,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-02T15:00:00Z"
+  },
+  {
+    "order_id": "ORD-10195",
+    "customer_id": "CUST-038",
+    "status": "DELIVERED",
+    "amount": 47.22,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T14:00:00Z"
+  },
+  {
+    "order_id": "ORD-10196",
+    "customer_id": "CUST-017",
+    "status": "DELIVERED",
+    "amount": 201.72,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-06T17:00:00Z"
+  },
+  {
+    "order_id": "ORD-10197",
+    "customer_id": "CUST-011",
+    "status": "DELIVERED",
+    "amount": 26.79,
+    "currency": "KRW",
+    "items": 3,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T20:00:00Z"
+  },
+  {
+    "order_id": "ORD-10198",
+    "customer_id": "CUST-028",
+    "status": "DELIVERED",
+    "amount": 208.64,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "ICN-2",
+    "created_at": "2026-10-02T12:00:00Z"
+  },
+  {
+    "order_id": "ORD-10199",
+    "customer_id": "CUST-031",
+    "status": "DELIVERED",
+    "amount": 36.46,
+    "currency": "KRW",
+    "items": 4,
+    "warehouse": "PUS-1",
+    "created_at": "2026-10-03T18:00:00Z"
+  }
+]

@@ -149,6 +149,17 @@ python logs/view.py worker 를 실행하고, 그 출력만 보고 뭐가 문제�
 
 `search`는 INFO 줄 안에만 신호가 있어 headroom이 전부 생략합니다. Claude가 `headroom_retrieve`로 원본을 다시 가져와 맞히는지가 핵심입니다.
 
+### JSON 파일 (`logs/*.json`)
+| 파일 | 질문 | 정답 | 절약 |
+|---|---|---|---|
+| `orders.json` | 실패한 주문 찾아줘 | ORD-10137 (PAYMENT_FAILED) | ~69% |
+| `users.json` | 잠긴 계정 있어? | u-1088 (LOCKED) | ~62% |
+| `metrics.json` | CPU 튀는 시점 있어? | 09:04:01에 97.5% (평소 20~45%) | ~67% |
+
+- JSON은 `cat`으로 읽어도 압축됩니다 (headroom이 JSON은 고칠 코드가 아닌 데이터로 봄). `view.py`로 해도 결과는 같습니다.
+- 로그와 달리 **줄을 버리지 않습니다.** 반복되는 키 이름을 맨 위에 한 번만 쓰는 표 형태로 바꿀 뿐이라, 모든 값이 그대로 남습니다.
+  그래서 절약은 로그(~99%)보다 작지만, 개수 세기나 특정 값 찾기도 정확합니다.
+
 ### 덤: `cat` vs `view.py` 비교
 `cat logs/worker.txt 해서 뭐가 문제인지 알려줘`와 `python logs/view.py worker 를 실행하고 뭐가 문제인지 알려줘`를 각각 시켜 보고
 대시보드 Recent Requests를 비교하면, `cat` 쪽은 절약이 거의 없습니다.
