@@ -9,7 +9,7 @@ Headroom(https://github.com/headroomlabs-ai/headroom)을 소스째 가져와 커
 ## 설치 (editable)
 
 ```bash
-uv venv .venv --python 3.13
+uv venv .venv --python 3.11.9
 uv pip install --python .venv/bin/python -e vendor/headroom
 ```
 
