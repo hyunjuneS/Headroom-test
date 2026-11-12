@@ -142,7 +142,23 @@ def _get_encoding(encoding_name: str):
         )
         raise TiktokenLoadError(f"tiktoken encoding {encoding_name!r} load timed out")
     if "err" in box:
-        raise box["err"]
+        # [custom] A vocab download that *fails* (SSL error behind a corporate
+        # TLS-inspecting proxy, blocked host, DNS) must degrade the same way a
+        # stalled one does: callers only catch TiktokenLoadError, so re-raising
+        # the raw requests/urllib3 error aborted the whole compression pass
+        # ("Optimization failed ... request forwarded unoptimized").
+        err = box["err"]
+        if isinstance(err, (KeyboardInterrupt, SystemExit)):
+            raise err
+        _load_failed.add(encoding_name)
+        logger.warning(
+            "tiktoken encoding %r failed to load (%s: %s); falling back to token "
+            "estimation. Pre-populate TIKTOKEN_CACHE_DIR to use exact counts.",
+            encoding_name,
+            type(err).__name__,
+            err,
+        )
+        raise TiktokenLoadError(f"tiktoken encoding {encoding_name!r} failed to load") from err
     return box["enc"]
 
 
