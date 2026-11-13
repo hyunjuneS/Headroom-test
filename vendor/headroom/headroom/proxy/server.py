@@ -501,6 +501,10 @@ logger = logging.getLogger("headroom.proxy")
 
 # Liveness/readiness probe routes: auth-exempt, and logged at DEBUG.
 _HEALTH_PROBE_PATHS = frozenset({"/health", "/livez", "/readyz"})
+# [custom] Paths the bundled dashboard polls; logged at DEBUG like health probes.
+_DASHBOARD_POLL_PATHS = frozenset(
+    {"/stats", "/stats-history", "/stats-lifetime", "/settings/schema", "/favicon.ico"}
+)
 
 
 def _output_reduction_payload(shaper_active: bool, est: Any = None) -> dict[str, Any]:
@@ -4360,8 +4364,17 @@ def create_app(config: ProxyConfig | None = None) -> FastAPI:
             safe_headers = {"redaction_error": True}
         # A desktop or orchestrator polls these every few seconds; at INFO they
         # filled half of an idle proxy log and cut a busy one's history to hours.
+        # [custom] The dashboard polls /stats every 5s (plus its own page and
+        # static assets); demote those to DEBUG for the same reason.
         line_level = (
-            logging.DEBUG if method == "GET" and path in _HEALTH_PROBE_PATHS else logging.INFO
+            logging.DEBUG
+            if method == "GET"
+            and (
+                path in _HEALTH_PROBE_PATHS
+                or path in _DASHBOARD_POLL_PATHS
+                or path.startswith("/dashboard")
+            )
+            else logging.INFO
         )
         logger.log(
             line_level,

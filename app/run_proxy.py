@@ -25,6 +25,10 @@ upstream = base_url[: -len("/v1")] if base_url.endswith("/v1") else base_url
 # cache: 이전 턴을 고정해 프롬프트 캐시 적중률을 우선 (headroom 기본값)
 mode = os.getenv("HEADROOM_MODE", "token")
 
+# Kompress(텍스트용 ML 모델)는 Hugging Face 에서 모델을 받아야 한다. 회사망에서 막히면
+# .env 에 HEADROOM_DISABLE_KOMPRESS=1 을 넣는다 (로그/JSON/코드 압축은 그대로 동작).
+# headroom 이 이 환경변수를 직접 읽으므로 여기서 따로 넘길 필요는 없다.
+
 cmd = [
     sys.executable, "-m", "headroom.cli", "proxy",
     "--port", str(port),

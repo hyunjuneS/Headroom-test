@@ -46,11 +46,14 @@ python app/llm_call.py     # 터미널 2: LLM 호출
 
 대시보드: http://127.0.0.1:8787/dashboard
 
+회사망에서 Hugging Face 가 막혀 `OSError: We couldn't connect to 'https://huggingface.co'` 가 뜨면 `.env` 에 `HEADROOM_DISABLE_KOMPRESS=1` 을 둔다 (Kompress 텍스트 ML 모델만 꺼지고 로그/JSON/코드 압축은 동작).
+
 ## 커스텀 수정 내역 (vendor/headroom)
 
 | 파일 | 내용 |
 |---|---|
 | `headroom/tokenizers/tiktoken_counter.py` | tiktoken vocab 다운로드 실패(SSL/프록시 차단) 시 압축 전체가 실패하던 문제 → 토큰 추정치로 폴백 |
+| `headroom/proxy/server.py` | 대시보드가 5초마다 `/stats` 를 폴링할 때마다 찍히던 INFO 로그를 DEBUG 로 낮춤 (헬스체크와 동일 처리) |
 
 ## upstream 업데이트
 
