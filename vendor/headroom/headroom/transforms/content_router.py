@@ -4415,6 +4415,38 @@ class ContentRouter(Transform):
         bias: float = 1.0,
         _allow_embedded: bool = True,
     ) -> tuple[str, int, list[str], bool]:
+        """[custom] Trace wrapper around the real dispatch (see ``_impl``).
+
+        With ``HEADROOM_CUSTOM_TRACE=1`` every compressed block is logged with
+        its strategy, the compressor chain that ran and the size change, so you
+        can see the vendored router is the one doing the work.
+        """
+        result = self._apply_strategy_to_content_impl(
+            content, strategy, context, language, question, bias, _allow_embedded
+        )
+        if os.environ.get("HEADROOM_CUSTOM_TRACE", "").strip().lower() in ("1", "true", "yes", "on"):
+            out, out_tokens, chain, reversible = result
+            logger.info(
+                "[custom-trace] strategy=%s chain=%s chars=%d->%d tokens_after=%d reversible=%s",
+                strategy.value,
+                ",".join(chain) or "-",
+                len(content),
+                len(out),
+                out_tokens,
+                reversible,
+            )
+        return result
+
+    def _apply_strategy_to_content_impl(
+        self,
+        content: str,
+        strategy: CompressionStrategy,
+        context: str,
+        language: str | None = None,
+        question: str | None = None,
+        bias: float = 1.0,
+        _allow_embedded: bool = True,
+    ) -> tuple[str, int, list[str], bool]:
         """Apply a compression strategy to content.
 
         Args:

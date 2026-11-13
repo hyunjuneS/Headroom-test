@@ -770,6 +770,19 @@ def _check_rust_core() -> tuple[str, str | None]:
         sys.exit(_EXIT_CONFIG)
 
     logger.info("event=rust_core_loaded marker=%r", marker)
+    # [custom] Show which headroom source tree is actually running (vendored
+    # editable checkout vs a site-packages wheel) and where _core came from.
+    try:
+        import headroom as _hr
+        import headroom._core as _hr_core
+
+        logger.info(
+            "[custom] headroom source=%s _core=%s",
+            os.path.dirname(os.path.abspath(_hr.__file__)),
+            os.path.abspath(_hr_core.__file__),
+        )
+    except Exception:  # noqa: BLE001 - diagnostics only
+        logger.debug("[custom] headroom source path lookup failed", exc_info=True)
     return ("loaded", None)
 
 

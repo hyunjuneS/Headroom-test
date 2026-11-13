@@ -54,6 +54,8 @@ python app/llm_call.py     # 터미널 2: LLM 호출
 |---|---|
 | `headroom/tokenizers/tiktoken_counter.py` | tiktoken vocab 다운로드 실패(SSL/프록시 차단) 시 압축 전체가 실패하던 문제 → 토큰 추정치로 폴백 |
 | `headroom/proxy/server.py` | 대시보드가 5초마다 `/stats` 를 폴링할 때마다 찍히던 INFO 로그를 DEBUG 로 낮춤 (헬스체크와 동일 처리) |
+| `headroom/proxy/server.py` | 시작 시 `[custom] headroom source=... _core=...` 로그로 실제 로드된 소스 경로 표시 |
+| `headroom/transforms/content_router.py` | `HEADROOM_CUSTOM_TRACE=1` 이면 압축 블록마다 `[custom-trace] strategy=... chain=... chars=a->b` 로그 |
 
 ## upstream 업데이트
 
